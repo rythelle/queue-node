@@ -8,6 +8,6 @@ export default {
   async handle({ data }: Job): Promise<any> {
     const { name, email } = data;
 
-    console.log({ name, email });
+    console.log(name, email);
   },
 };

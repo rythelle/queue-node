@@ -3,6 +3,9 @@ import Mail from "../libs/Mail";
 
 export default {
   key: "Registration Mail",
+  options: {
+    delay: 0,
+  },
   async handle({ data }: Job): Promise<any> {
     const { name, email } = data;
 

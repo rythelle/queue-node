@@ -12,6 +12,7 @@ const queues = Object.values(jobs).map((job) => ({
   bull: new Queue(job.key, redisConfig),
   name: job.key,
   handle: job.handle,
+  options: job.options,
 }));
 
 export default {
